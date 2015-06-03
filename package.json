@@ -1,0 +1,22 @@
+{
+  "name": "secure_message_client",
+  "version": "1.0.0",
+  "description": "Client um von eine REST-api verschlüsselte Nachrichten zu verarbeiten  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwhat/secure_message_client.git"
+  },
+  "author": "Mark Warneke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwhat/secure_message_client/issues"
+  },
+  "homepage": "https://github.com/dwhat/secure_message_client",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}
