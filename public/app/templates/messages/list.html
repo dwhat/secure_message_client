@@ -9,12 +9,14 @@
         <tr>
           <th>Name</th>
           <th>Egal</th>
+          <th>Aktion</th>
         </tr>
       </thead>
       <tbody>
         <tr ng-repeat="user in users">
           <td>{{user.name}}</td>
           <td>{{user.egal}}</td>
+          <td><a href="#/messages/{{message._id}}/edit" class="btn btn-default">Bearbeiten</a></td>
         </tr>
       </tbod>
     </table>

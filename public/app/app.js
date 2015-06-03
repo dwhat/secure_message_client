@@ -10,5 +10,9 @@ app.config(function($routeProvider){
       templateUrl: "/app/templates/messages/create.html",
       controller: "NachrichtenCreateController"
     })
+    .when("/messages/:id/edit", {
+      templateUrl: "/app/templates/messages/edit.html",
+      controller: "NachrichtenEditController"
+    })
     .otherwise({redirectTo: '/messages'});
 });
