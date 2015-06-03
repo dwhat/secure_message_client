@@ -1,5 +1,10 @@
-var app = angular.module("securemessageclient", []);
+var app = angular.module("securemessageclient", ["ngRoute"]);
 
-app.controller("HomeController", function ($scope){
-  $scope.message = "Hallo Angular";
-})
+app.config(function($routeProvider){
+  $routeProvider
+    .when("/nachrichten", {
+      templateUrl: "/app/templates/nachrichten/list.html",
+      controller: "NachrichtenListController"
+    })
+    .otherwise({redirectTo: '/nachrichten'});
+});
