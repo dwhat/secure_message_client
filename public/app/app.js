@@ -2,9 +2,13 @@ var app = angular.module("securemessageclient", ["ngRoute"]);
 
 app.config(function($routeProvider){
   $routeProvider
-    .when("/nachrichten", {
-      templateUrl: "/app/templates/nachrichten/list.html",
+    .when("/messages", {
+      templateUrl: "/app/templates/messages/list.html",
       controller: "NachrichtenListController"
     })
-    .otherwise({redirectTo: '/nachrichten'});
+    .when("/messages/new", {
+      templateUrl: "/app/templates/messages/create.html",
+      controller: "NachrichtenCreateController"
+    })
+    .otherwise({redirectTo: '/messages'});
 });
