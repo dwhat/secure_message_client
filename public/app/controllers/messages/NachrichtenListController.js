@@ -5,7 +5,7 @@ app.controller("NachrichtenListController", function ($scope, $http){
 
 
   $http.get("https://webengproject.herokuapp.com").success(funciton(response){
-    $scope.users = response;
+    $scope.messages = response;
   }).error(function(err){
     $scope.error = err;
   });

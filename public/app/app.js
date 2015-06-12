@@ -1,4 +1,5 @@
 var app = angular.module("securemessageclient", ["ngRoute"]);
+var SHA256 = require("lib/crypto-js/sha256");
 
 app.config(function($routeProvider){
   $routeProvider
@@ -30,5 +31,5 @@ app.config(function($routeProvider){
       templateUrl: "/app/templates/messages/edit.html",
       controller: "NachrichtenEditController"
     })
-    .otherwise({redirectTo: '/messages'});
+    .otherwise({redirectTo: '/users'});
 });
