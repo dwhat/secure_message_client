@@ -11,7 +11,7 @@ app.controller("NachrichtenEditController", function ($scope, $http, $location, 
   })
 
   $scope.saveMessage = function (){
-    $http.put("http://../" + $scope.message._id, $scope.message)
+    $http.put("https://webengproject.herokuapp.com" + $scope.message._id, $scope.message)
     .success(function(response){
       $location.url("/messages")
     });

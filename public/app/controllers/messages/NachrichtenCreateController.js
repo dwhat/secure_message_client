@@ -5,9 +5,9 @@ app.controller("NachrichtenCreateController", function ($scope, $http, $location
   $scope.message = {};
 
   $scope.createMessage = function (){
-    $http.post("http://...", $scope.message)
+    $http.post("https://webengproject.herokuapp.com", $scope.message)
       .success(function(response) {
-        $location.url("/fahrten");
+        $location.url("/messages");
       });
   }
 });
